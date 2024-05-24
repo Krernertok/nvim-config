@@ -15,7 +15,8 @@ return{{
         "python",
         "yaml",
         "terraform",
-        "hcl"
+        "hcl",
+        "go"
       },
       sync_install = false,
       highlight = { enable = true },
