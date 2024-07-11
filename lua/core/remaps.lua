@@ -25,8 +25,8 @@ vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
 -- Move between tabs
-vim.keymap.set("n", "<C-Tab>", vim.cmd.tabnext)
-vim.keymap.set("n", "<S-Tab>", vim.cmd.tabprevious)
+vim.keymap.set("n", "å", vim.cmd.tabnext)
+vim.keymap.set("n", "Å", vim.cmd.tabprevious)
 
 -- Move between windows
 vim.keymap.set("n", "<C-h>", "<C-w>h")
@@ -40,3 +40,5 @@ vim.keymap.set("n", "<leader>-", vim.cmd.split)
 
 -- Closing windows
 vim.keymap.set("n", "<leader>q", vim.cmd.quit)
+vim.keymap.set("n", "<leader>Q", vim.cmd.qall)
+
