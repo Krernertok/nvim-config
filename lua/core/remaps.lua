@@ -24,6 +24,9 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
+-- Visual block mode
+vim.keymap.set("n", "<C-q>", "<C-v>")
+
 -- Move between tabs
 vim.keymap.set("n", "å", vim.cmd.tabnext)
 vim.keymap.set("n", "Å", vim.cmd.tabprevious)
@@ -42,3 +45,5 @@ vim.keymap.set("n", "<leader>-", vim.cmd.split)
 vim.keymap.set("n", "<leader>q", vim.cmd.quit)
 vim.keymap.set("n", "<leader>Q", vim.cmd.qall)
 
+-- Saving
+vim.keymap.set("n", "<leader>w", vim.cmd.write)
