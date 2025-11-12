@@ -51,3 +51,6 @@ vim.keymap.set("n", "<leader>w", vim.cmd.write)
 -- Exit terminal mode
 vim.keymap.set("t", "jk", "<C-\\><C-n>")
 vim.keymap.set("n", "<leader>t", function() vim.cmd("rightbelow vsplit | :term") end)
+
+-- Delete empty lines
+vim.keymap.set("v", "<leader>dl", "<cmd>'<,'>g/^$/d<CR>")
