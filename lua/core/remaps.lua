@@ -47,3 +47,6 @@ vim.keymap.set("n", "<leader>Q", vim.cmd.qall)
 
 -- Saving
 vim.keymap.set("n", "<leader>w", vim.cmd.write)
+
+-- Exit terminal mode
+vim.keymap.set("t", "jk", "<C-\\><C-n>")
