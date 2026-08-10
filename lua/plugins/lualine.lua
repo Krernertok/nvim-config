@@ -23,11 +23,19 @@ return{
         }
       },
       sections = {
-        lualine_a = {'mode'},
+        lualine_a = {'mode', dotnet.lualine.jobs },
         lualine_b = {'branch', 'diff', 'diagnostics'},
         lualine_c = {},
         lualine_x = {'encoding', 'fileformat', 'filetype'},
-        lualine_y = {'progress'},
+        lualine_y = {'
+          progress', 
+          dotnet.lualine.active_project,
+          {
+            dotnet.lualine.run_status,
+            color    = dotnet.lualine.run_status_color,
+            on_click = dotnet.lualine.run_status_click,
+          },
+        },
         lualine_z = {'location'}
       },
       inactive_sections = {
