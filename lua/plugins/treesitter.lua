@@ -7,10 +7,12 @@ return{{
     configs.setup({
       ensure_installed = {
         "bash",
-        "c",
         "go",
         "hcl",
         "html",
+        "css",
+        "javascript",
+        "typescript",
         "lua",
         "markdown",
         "python",
