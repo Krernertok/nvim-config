@@ -54,3 +54,13 @@ vim.keymap.set("n", "<leader>t", function() vim.cmd("rightbelow vsplit | :term")
 
 -- Delete empty lines
 vim.keymap.set("v", "<leader>dl", "<cmd>'<,'>g/^$/d<CR>")
+
+-- LSP
+vim.keymap.set("n", "K", vim.lsp.buf.hover)
+vim.keymap.set("n", "gd", vim.lsp.buf.definition)
+vim.keymap.set("n", "gr", vim.lsp.buf.references)
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename)
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
+vim.keymap.set("n", "<leader>dj", function() vim.diagnostic.jump({count=-1, float=true}) end)
+vim.keymap.set("n", "<leader>dk", function() vim.diagnostic.jump({count=1, float=true}) end)
+vim.keymap.set("n", "le", vim.diagnostic.open_float)
